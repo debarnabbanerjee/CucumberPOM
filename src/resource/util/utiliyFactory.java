@@ -6,6 +6,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
 
 public class utiliyFactory {	
@@ -14,6 +18,11 @@ public class utiliyFactory {
 	private static FileInputStream ip;
 	private static utiliyFactory ufactory;	
 	private static String returnpath;
+	
+	private static HttpClient client;
+	private static HttpGet request;
+	private static HttpResponse response;
+	
 	
 	private utiliyFactory(){}
 	
@@ -72,6 +81,19 @@ public class utiliyFactory {
 			log.debug("Unable to create results folder" + e.getMessage());
 		}
 		
+	}
+	
+	public static int checkResponse(String url){
+		try{
+			client = HttpClientBuilder.create().build();
+			request = new HttpGet(url);		
+			response = client.execute(request);
+			writeLogs("Response Code : "+ response.getStatusLine().getStatusCode());
+			return response.getStatusLine().getStatusCode();
+		}catch(Exception e){
+			writeLogs("Erros in getting server response ... " + e.getMessage());
+			return 0;
+		}
 	}
 
 	public static String returnPath(){

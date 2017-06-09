@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.53.0.jar -role node -Dwebdriver.chrome.driver="C:\Users\Debarnab\CucumberPOM\chromedriver.exe" -nodeConfig startNode.json

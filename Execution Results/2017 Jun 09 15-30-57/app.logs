@@ -1,0 +1,27 @@
+09/06/2017 15:30:57 devpinoyLogger Testing log files and starting the testing process
+09/06/2017 15:30:57 devpinoyLogger Loaded the config file
+09/06/2017 15:30:57 devpinoyLogger Created results folder at 2017 Jun 09 15-30-57
+09/06/2017 15:30:57 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:30:57 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:30:57 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:30:57 devpinoyLogger Set Capabilities for chrome
+09/06/2017 15:31:00 devpinoyLogger Selenium Grid Started
+09/06/2017 15:31:06 devpinoyLogger Loaded the property baseUrl
+09/06/2017 15:31:09 devpinoyLogger Response Code : 500
+09/06/2017 15:31:09 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:09 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:09 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:09 devpinoyLogger Set Capabilities for chrome
+09/06/2017 15:31:09 devpinoyLogger Selenium Grid already opened hence ignoring ...
+09/06/2017 15:31:12 devpinoyLogger Loaded the property baseUrl
+09/06/2017 15:31:14 devpinoyLogger Response Code : 500
+09/06/2017 15:31:15 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:15 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:15 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:15 devpinoyLogger Set Capabilities for ie
+09/06/2017 15:31:15 devpinoyLogger Selenium Grid already opened hence ignoring ...
+09/06/2017 15:31:18 devpinoyLogger Loaded the property baseUrl
+09/06/2017 15:31:21 devpinoyLogger Response Code : 500
+09/06/2017 15:31:21 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:21 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:31:21 devpinoyLogger Trying to close browser for gird running 

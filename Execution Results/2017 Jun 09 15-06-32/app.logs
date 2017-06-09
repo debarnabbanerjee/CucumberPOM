@@ -1,0 +1,21 @@
+09/06/2017 15:06:32 devpinoyLogger Testing log files and starting the testing process
+09/06/2017 15:06:32 devpinoyLogger Loaded the config file
+09/06/2017 15:06:32 devpinoyLogger Created results folder at 2017 Jun 09 15-06-32
+09/06/2017 15:06:32 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:06:32 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:06:37 devpinoyLogger Loaded browser chrome
+09/06/2017 15:06:37 devpinoyLogger Loaded the property timeout
+09/06/2017 15:06:37 devpinoyLogger Added Implicit Wait for webdriver
+09/06/2017 15:06:39 devpinoyLogger Maximized the browser Window
+09/06/2017 15:06:39 devpinoyLogger Loaded the property baseUrl
+09/06/2017 15:06:41 devpinoyLogger Response Code : 500
+09/06/2017 15:06:41 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:06:41 devpinoyLogger Loaded the property executionmode
+09/06/2017 15:06:41 devpinoyLogger repointed to the already opened browser chrome
+09/06/2017 15:06:41 devpinoyLogger Loaded the property timeout
+09/06/2017 15:06:41 devpinoyLogger Added Implicit Wait for webdriver
+09/06/2017 15:06:41 devpinoyLogger Maximized the browser Window
+09/06/2017 15:06:41 devpinoyLogger Loaded the property baseUrl
+09/06/2017 15:06:43 devpinoyLogger Response Code : 500
+09/06/2017 15:06:43 devpinoyLogger Trying to close browser 
+09/06/2017 15:06:43 devpinoyLogger No of opened browsers are 1

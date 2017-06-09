@@ -62,10 +62,11 @@ public class testSteps {
 		BrowserFactory.getBrowsewrInstance(browserType);
 		try{
 			BrowserFactory.driver.navigate().to(utiliyFactory.getProp("baseUrl"));
+			Assert.assertEquals(utiliyFactory.checkResponse(BrowserFactory.driver.getCurrentUrl()), 200);
 			utiliyFactory.writeLogs("Opened the base url with browserType " +  browserType);
 		}catch(Exception e){
 			utiliyFactory.writeLogs("Unable to navigate to browser " +  e.getMessage());
-			return;
+			return ;
 		}
 	}
 
@@ -112,10 +113,7 @@ public class testSteps {
 		else if(type.trim().equalsIgnoreCase("incorrect") && loginResult==false){
 			//System.out.println("****** DD");
 			utiliyFactory.writeLogs("PASS - Unable to login with incorrect credentials");
-			isLoggedIn=false;
-			
-			
-			
+			isLoggedIn=false;				
 		}		
 	}
 
@@ -127,12 +125,10 @@ public class testSteps {
 			utiliyFactory.writeLogs("Tryin to login using ussername as " + list.get(1).get(1) + " and password as "
 					+ list.get(1).get(1));
 			loginResult = lp.doLogin(list.get(2).get(1), list.get(1).get(1));
+			Assert.assertEquals(utiliyFactory.checkResponse(BrowserFactory.driver.getCurrentUrl()), 200);
 			//Assert.fail("login Failed and checking screenshots");
 		}catch(Exception e){
 			utiliyFactory.writeLogs("Error while login in  " + e.getMessage());
 		}
 	}
-	
-
-
 }
