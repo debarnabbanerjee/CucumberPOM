@@ -1,0 +1,18 @@
+11/06/2017 22:16:28 devpinoyLogger Testing log files and starting the testing process
+11/06/2017 22:16:28 devpinoyLogger Loaded the config file
+11/06/2017 22:16:28 devpinoyLogger Created results folder at 2017 Jun 11 22-16-28
+11/06/2017 22:16:28 devpinoyLogger Loaded the property executionmode
+11/06/2017 22:16:28 devpinoyLogger Loaded the property executionmode
+11/06/2017 22:16:32 devpinoyLogger Loaded browser ie
+11/06/2017 22:16:32 devpinoyLogger Loaded the property timeout
+11/06/2017 22:16:32 devpinoyLogger Added Implicit Wait for webdriver
+11/06/2017 22:16:32 devpinoyLogger Maximized the browser Window
+11/06/2017 22:16:32 devpinoyLogger Loaded the property baseUrl
+11/06/2017 22:16:32 devpinoyLogger Response Code : 200
+11/06/2017 22:16:32 devpinoyLogger Opened the base url with browserType ie
+11/06/2017 22:16:32 devpinoyLogger Loaded the property executionmode
+11/06/2017 22:16:32 devpinoyLogger Trying to close browser for standalone running 
+11/06/2017 22:16:32 devpinoyLogger Closed IE Browser 
+11/06/2017 22:16:32 devpinoyLogger Trying to kill the  IE task now
+11/06/2017 22:16:32 devpinoyLogger Killed the  IE task now
+11/06/2017 22:16:32 devpinoyLogger Closed all browsers for standalone running 

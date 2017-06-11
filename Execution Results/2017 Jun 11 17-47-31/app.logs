@@ -1,0 +1,50 @@
+11/06/2017 17:47:31 devpinoyLogger Testing log files and starting the testing process
+11/06/2017 17:47:31 devpinoyLogger Loaded the config file
+11/06/2017 17:47:31 devpinoyLogger Created results folder at 2017 Jun 11 17-47-31
+11/06/2017 17:47:32 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:32 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:32 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:32 devpinoyLogger Set Capabilities for chrome
+11/06/2017 17:47:35 devpinoyLogger Selenium Grid Started
+11/06/2017 17:47:41 devpinoyLogger Loaded the property baseUrl
+11/06/2017 17:47:44 devpinoyLogger Response Code : 500
+11/06/2017 17:47:44 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:44 devpinoyLogger As Execution Mode is set to Grid hence closing the browser
+11/06/2017 17:47:45 devpinoyLogger Closed the browser after execution iteration
+11/06/2017 17:47:45 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:45 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:45 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:45 devpinoyLogger Set Capabilities for chrome
+11/06/2017 17:47:45 devpinoyLogger Selenium Grid already opened hence ignoring ...
+11/06/2017 17:47:48 devpinoyLogger Loaded the property baseUrl
+11/06/2017 17:47:51 devpinoyLogger Response Code : 500
+11/06/2017 17:47:51 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:51 devpinoyLogger As Execution Mode is set to Grid hence closing the browser
+11/06/2017 17:47:52 devpinoyLogger Closed the browser after execution iteration
+11/06/2017 17:47:52 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:52 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:52 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:47:52 devpinoyLogger Set Capabilities for firefox
+11/06/2017 17:47:52 devpinoyLogger Selenium Grid already opened hence ignoring ...
+11/06/2017 17:48:30 devpinoyLogger Unable to take screenshot Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEBARNAB-PC', ip: '192.168.1.157', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_92'
+Driver info: driver.version: RemoteWebDriver
+11/06/2017 17:48:30 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:30 devpinoyLogger As Execution Mode is set to Grid hence closing the browser
+11/06/2017 17:48:30 devpinoyLogger Closed the browser after execution iteration
+11/06/2017 17:48:30 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:30 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:30 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:30 devpinoyLogger Set Capabilities for firefox
+11/06/2017 17:48:30 devpinoyLogger Selenium Grid already opened hence ignoring ...
+11/06/2017 17:48:31 devpinoyLogger Unable to take screenshot Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEBARNAB-PC', ip: '192.168.1.157', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_92'
+Driver info: driver.version: RemoteWebDriver
+11/06/2017 17:48:31 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:31 devpinoyLogger As Execution Mode is set to Grid hence closing the browser
+11/06/2017 17:48:31 devpinoyLogger Closed the browser after execution iteration
+11/06/2017 17:48:31 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:31 devpinoyLogger Loaded the property executionmode
+11/06/2017 17:48:31 devpinoyLogger Trying to close browser for gird running 
