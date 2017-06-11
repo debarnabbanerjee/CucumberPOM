@@ -3,9 +3,9 @@
       [
         {
           "browserName": "firefox",
-          "maxInstances": 5,
-          "version": "3.6",
-          "platform": "WINDOWS"
+          "maxInstances": 5,          
+          "platform": "ANY",
+          "seleniumProtocol": "WebDriver"
         },
         {
           "browserName": "chrome",
@@ -25,7 +25,7 @@
     "port": 5555,
     "register": true,
     "registerCycle": 5000,
-    "hubPort": 4445,
+    "hubPort": 4444,
     "hubHost": "ip"
   }
 }

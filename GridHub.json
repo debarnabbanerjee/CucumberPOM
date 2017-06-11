@@ -1,6 +1,6 @@
 {
   "host": null,
-  "port": 4445,
+  "port": 4444,
   "newSessionWaitTimeout": -1,
   "servlets" : [],
   "prioritizer": null,

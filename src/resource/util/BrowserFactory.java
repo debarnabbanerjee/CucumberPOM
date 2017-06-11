@@ -27,7 +27,7 @@ public class BrowserFactory {
 	private static boolean isGridStarted = false;
 	
 	public static void getBrowsewrInstance(String browser){
-		if(utiliyFactory.getProp("executionmode").contains("Standalone")){
+		if(utiliyFactory.getProp("executionmode").equalsIgnoreCase(("Standalone"))){
 			standAlondInstance(browser);
 		}else if(utiliyFactory.getProp("executionmode").contains("grid")){
 			gripOperations(browser);
@@ -41,7 +41,7 @@ public class BrowserFactory {
 		if(utiliyFactory.getProp("executionmode").contains("Standalone")){
 			//firefox
 			if(browser.equalsIgnoreCase("firefox") && firefox_BKP  == null ){
-				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//");
+				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//geckodriver.exe");
 				driver = new FirefoxDriver();
 				firefox_BKP=(FirefoxDriver) driver;
 				utiliyFactory.writeLogs("Loaded browser " + browser);
@@ -65,7 +65,7 @@ public class BrowserFactory {
 			//ie
 			else if (browser.equalsIgnoreCase("ie") && ie_BKP==null){
 				System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"//IEDriverServer.exe");
-				driver = new InternetExplorerDriver();
+				driver = new InternetExplorerDriver();				
 				ie_BKP=(InternetExplorerDriver) driver;
 				utiliyFactory.writeLogs("Loaded browser " + browser);
 			}
@@ -84,25 +84,31 @@ public class BrowserFactory {
 		// need to code for the remote webdriver 	
 		private static void gripOperations(String browser){
 			if(utiliyFactory.getProp("executionmode").equalsIgnoreCase("grid")){
-				
+				startNodeAndHub();
 				cap = new DesiredCapabilities();	
-				if(browser.equalsIgnoreCase("fireox")){
+				if(browser.equalsIgnoreCase("firefox")){
+					System.out.println("Inside firefox cap check");
 					cap.firefox();
 					cap.setCapability(CapabilityType.BROWSER_NAME, "firefox");
 					cap.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
-					cap.setCapability(CapabilityType.PLATFORM, Platform.ANY);
+					cap.setCapability(CapabilityType.PLATFORM, Platform.ANY);					
 					cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, Platform.ANY);
 					
 					utiliyFactory.writeLogs("Set Capabilities for " + browser);
-				}else if(browser.equalsIgnoreCase("chrome")){
+				}
+				
+				else if(browser.equalsIgnoreCase("chrome")){
 					System.out.println("Inside chrome cap check");
 					cap.chrome();
 					cap.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 					cap.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
 					cap.setCapability(CapabilityType.PLATFORM, Platform.ANY);
 					cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, Platform.ANY);
+					
 					utiliyFactory.writeLogs("Set Capabilities for " + browser);
-				}else if(browser.equalsIgnoreCase("ie")){
+				}
+				
+				else if(browser.equalsIgnoreCase("ie")){
 					cap.internetExplorer();
 					cap.setCapability(CapabilityType.BROWSER_NAME, "internet explorer");
 					cap.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
@@ -110,10 +116,12 @@ public class BrowserFactory {
 					cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, Platform.WINDOWS);
 					utiliyFactory.writeLogs("Set Capabilities for " + browser);
 				}
-				startNodeAndHub();
+				
 
 				try {
-					driver =new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"),cap);					
+					//driver =new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"),cap);	
+					//http://localhost:4445/wd/hub
+					driver =new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"),cap);	
 				} catch (MalformedURLException e) {
 					utiliyFactory.writeLogs("Unable to open the remote webdriver " + e.getMessage());
 					return;
