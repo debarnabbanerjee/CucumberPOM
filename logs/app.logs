@@ -1,18 +1,39 @@
-11/06/2017 22:16:28 devpinoyLogger Testing log files and starting the testing process
-11/06/2017 22:16:28 devpinoyLogger Loaded the config file
-11/06/2017 22:16:28 devpinoyLogger Created results folder at 2017 Jun 11 22-16-28
-11/06/2017 22:16:28 devpinoyLogger Loaded the property executionmode
-11/06/2017 22:16:28 devpinoyLogger Loaded the property executionmode
-11/06/2017 22:16:32 devpinoyLogger Loaded browser ie
-11/06/2017 22:16:32 devpinoyLogger Loaded the property timeout
-11/06/2017 22:16:32 devpinoyLogger Added Implicit Wait for webdriver
-11/06/2017 22:16:32 devpinoyLogger Maximized the browser Window
-11/06/2017 22:16:32 devpinoyLogger Loaded the property baseUrl
-11/06/2017 22:16:32 devpinoyLogger Response Code : 200
-11/06/2017 22:16:32 devpinoyLogger Opened the base url with browserType ie
-11/06/2017 22:16:32 devpinoyLogger Loaded the property executionmode
-11/06/2017 22:16:32 devpinoyLogger Trying to close browser for standalone running 
-11/06/2017 22:16:32 devpinoyLogger Closed IE Browser 
-11/06/2017 22:16:32 devpinoyLogger Trying to kill the  IE task now
-11/06/2017 22:16:32 devpinoyLogger Killed the  IE task now
-11/06/2017 22:16:32 devpinoyLogger Closed all browsers for standalone running 
+12/06/2017 22:12:04 devpinoyLogger Testing log files and starting the testing process
+12/06/2017 22:12:04 devpinoyLogger Loaded the config file
+12/06/2017 22:12:04 devpinoyLogger Created results folder at 2017 Jun 12 22-12-04
+12/06/2017 22:12:04 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:09 devpinoyLogger Loaded browser chrome
+12/06/2017 22:12:11 devpinoyLogger Loaded the property timeout
+12/06/2017 22:12:11 devpinoyLogger Added Implicit Wait for webdriver
+12/06/2017 22:12:12 devpinoyLogger Maximized the browser Window
+12/06/2017 22:12:12 devpinoyLogger Loaded the property baseUrl
+12/06/2017 22:12:14 devpinoyLogger Response Code : 500
+12/06/2017 22:12:14 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:14 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:14 devpinoyLogger repointed to the already opened browser chrome
+12/06/2017 22:12:14 devpinoyLogger Loaded the property timeout
+12/06/2017 22:12:14 devpinoyLogger Added Implicit Wait for webdriver
+12/06/2017 22:12:14 devpinoyLogger Maximized the browser Window
+12/06/2017 22:12:14 devpinoyLogger Loaded the property baseUrl
+12/06/2017 22:12:16 devpinoyLogger Response Code : 500
+12/06/2017 22:12:16 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:16 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:27 devpinoyLogger Loaded browser firefox
+12/06/2017 22:12:27 devpinoyLogger Loaded the property timeout
+12/06/2017 22:12:27 devpinoyLogger Added Implicit Wait for webdriver
+12/06/2017 22:12:27 devpinoyLogger Maximized the browser Window
+12/06/2017 22:12:27 devpinoyLogger Loaded the property baseUrl
+12/06/2017 22:12:29 devpinoyLogger Response Code : 500
+12/06/2017 22:12:29 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:29 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:29 devpinoyLogger repointed to the already opened browser firefox
+12/06/2017 22:12:29 devpinoyLogger Loaded the property timeout
+12/06/2017 22:12:29 devpinoyLogger Added Implicit Wait for webdriver
+12/06/2017 22:12:29 devpinoyLogger Maximized the browser Window
+12/06/2017 22:12:29 devpinoyLogger Loaded the property baseUrl
+12/06/2017 22:12:30 devpinoyLogger Response Code : 500
+12/06/2017 22:12:30 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:30 devpinoyLogger Loaded the property executionmode
+12/06/2017 22:12:30 devpinoyLogger Trying to close browser for standalone running 
+12/06/2017 22:12:32 devpinoyLogger Closed Chrome Browser 
+12/06/2017 22:12:33 devpinoyLogger Closed Firefox Browser 

@@ -8,13 +8,13 @@ import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
-import util.BrowserFactory;
-import util.utiliyFactory;
 import cucumber.api.CucumberOptions;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.junit.Cucumber;
+import utility.BrowserFactory;
+import utility.utiliyFactory;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(

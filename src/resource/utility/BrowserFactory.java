@@ -1,4 +1,4 @@
-package util;
+package utility;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -38,7 +38,8 @@ public class BrowserFactory {
 
 		// check if the execution type is standalone or not.
 		// if standalone
-		if(utiliyFactory.getProp("executionmode").contains("Standalone")){
+		//if(utiliyFactory.getProp("executionmode").contains("Standalone")){
+		
 			//firefox
 			if(browser.equalsIgnoreCase("firefox") && firefox_BKP  == null ){
 				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//geckodriver.exe");
@@ -74,12 +75,13 @@ public class BrowserFactory {
 				driver=ie_BKP;
 				utiliyFactory.writeLogs("repointed to the already opened browser " + browser);
 			}
+			
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().implicitlyWait(Integer.valueOf(utiliyFactory.getProp("timeout")), TimeUnit.SECONDS);
 			utiliyFactory.writeLogs("Added Implicit Wait for webdriver");
 			driver.manage().window().maximize();
 			utiliyFactory.writeLogs("Maximized the browser Window");
-		}
+		//}
 	}
 		// need to code for the remote webdriver 	
 		private static void gripOperations(String browser){

@@ -4,16 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import junit.framework.Assert;
-
 import org.apache.commons.io.FileUtils;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
 
-import util.BrowserFactory;
-import util.utiliyFactory;
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -21,6 +16,9 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import junit.framework.Assert;
+import utility.BrowserFactory;
+import utility.utiliyFactory;
 
 
 public class testSteps {
@@ -32,8 +30,7 @@ public class testSteps {
 	
 	@Before
 	public static  void setUp(){
-		utiliyFactory.getutiliyInstance();			
-	}
+		utiliyFactory.getutiliyInstance();	}
 		
 	@After
 	public void tearDown(Scenario s){
