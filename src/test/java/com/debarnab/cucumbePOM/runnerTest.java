@@ -19,13 +19,14 @@ import utility.utiliyFactory;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		strict = false, format = { "pretty",
-				"json:target/cucumber.json" ,"html:target/Destination"}, tags = { "~@ignore" },
-				features = {"src\\test\\java\\com\\debarnab\\cucumbePOM"})
+				"json:target/cucumber.json" ,"html:target/Destination"}, tags = { "~@ignore" }
+				,features = {"src\\test\\java\\com\\debarnab\\cucumbePOM"}
+				//,glue={"src\\test\\java\\com\\debarnab\\cucumbePOM"}
+		
+		)
 public class runnerTest {
 
 	static String firstScenarioName="";
-
-	
 
 	@AfterClass
 	public static void tearDown(){
@@ -47,21 +48,21 @@ public class runnerTest {
 				utiliyFactory.writeLogs("Closed Firefox Browser ");
 			} 
 			
-		//	if(BrowserFactory.ie_BKP!=null){
-				BrowserFactory.ie_BKP.close();
-				BrowserFactory.ie_BKP=null;
-				utiliyFactory.writeLogs("Closed IE Browser ");
-				
-				try {
-					utiliyFactory.writeLogs("Trying to kill the  IE task now");
-					Runtime.getRuntime().exec("taskkill /C /IM iexplore.exe");
-					utiliyFactory.writeLogs("Killed the  IE task now");
-					
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					utiliyFactory.writeLogs("Unable to kill the IE task " +e.getMessage());
-				}
-		//	}	
+//		//	if(BrowserFactory.ie_BKP!=null){
+//				BrowserFactory.ie_BKP.close();
+//				BrowserFactory.ie_BKP=null;
+//				utiliyFactory.writeLogs("Closed IE Browser ");
+//				
+//				try {
+//					utiliyFactory.writeLogs("Trying to kill the  IE task now");
+//					Runtime.getRuntime().exec("taskkill /C /IM iexplore.exe");
+//					utiliyFactory.writeLogs("Killed the  IE task now");
+//					
+//				} catch (IOException e) {
+//					// TODO Auto-generated catch block
+//					utiliyFactory.writeLogs("Unable to kill the IE task " +e.getMessage());
+//				}
+//		//	}	
 			
 			utiliyFactory.writeLogs("Closed all browsers for standalone running ");
 		}

@@ -133,7 +133,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 81756103,
+  "duration": 39210088,
   "status": "passed"
 });
 formatter.scenario({
@@ -219,8 +219,8 @@ formatter.match({
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 10085166670,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:85)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 10300555786,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -267,11 +267,11 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 277152982,
+  "duration": 1557536462,
   "status": "passed"
 });
 formatter.before({
-  "duration": 37320,
+  "duration": 24258,
   "status": "passed"
 });
 formatter.scenario({
@@ -357,8 +357,8 @@ formatter.match({
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 1347932387,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:85)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 7336053950,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -405,11 +405,11 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 240575341,
+  "duration": 1168097883,
   "status": "passed"
 });
 formatter.before({
-  "duration": 25657,
+  "duration": 27057,
   "status": "passed"
 });
 formatter.scenario({
@@ -495,8 +495,8 @@ formatter.match({
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 12760996290,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:85)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"firefox\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 10936417259,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"firefox\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -543,11 +543,11 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 163695541,
+  "duration": 798142592,
   "status": "passed"
 });
 formatter.before({
-  "duration": 26124,
+  "duration": 43385,
   "status": "passed"
 });
 formatter.scenario({
@@ -633,8 +633,8 @@ formatter.match({
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 1213450816,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:85)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"firefox\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 9799201542,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"firefox\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -681,7 +681,7 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded3.png");
 formatter.after({
-  "duration": 130718799,
+  "duration": 817447677,
   "status": "passed"
 });
 });

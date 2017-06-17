@@ -29,7 +29,9 @@ public class utiliyFactory {
 	public static void getutiliyInstance(){
 		if(ufactory==null){			
 			log = Logger.getLogger("devpinoyLogger");
+			System.out.println("Testing log files and starting the testing process");
 			log.debug("Testing log files and starting the testing process");
+			System.out.println("loaded log 4 j params");
 			
 			try{
 				prop = new Properties();
@@ -40,9 +42,9 @@ public class utiliyFactory {
 				log.debug("Unable to load config file");
 			}
 			
-			createExecutionFolders();
+			createExecutionFolders();			
+			ufactory = new utiliyFactory();	
 			
-			ufactory = new utiliyFactory();			
 		}else if(ufactory!=null)
 			return;
 		

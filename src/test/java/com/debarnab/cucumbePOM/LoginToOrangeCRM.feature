@@ -1,7 +1,7 @@
 Feature: As a Orange CRM Customer I want to check the login functionality of Orange HRM	
 	
 Scenario Outline: Testing the Orange HRM login functionality
-Given WH User navigatess to "Orange HRM" site using "<browser>"
+Given WH User navigates to "Orange HRM" site using "<browser>"
 Then I validate the page title as "OrangeHRM"
 When I try to Login with the following data:
 |Field		  |Value|
@@ -18,8 +18,6 @@ Examples:
 |incorrect  |test		    |test	        |chrome |         |
 |correct    |admin		    |admin	        |firefox 	|         |
 |incorrect  |peter.mac		|peter.mac	    |firefox 	|         |
-#|correct    |test1		    |test1	        |ie |         |
-#|correct    |test1		    |test1	        |ie |         |
 
 
 

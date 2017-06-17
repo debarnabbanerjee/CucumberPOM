@@ -13,21 +13,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class testClass {
 	static DesiredCapabilities cap;
 	public static void main(String[] args) throws ClientProtocolException, IOException, InterruptedException {
-		//utiliyFactory.getutiliyInstance();
-		//		BrowserFactory.gripOperations("chrome");
-		//		BrowserFactory.driver.navigate().to("http://gmail.com");
-
-		doTesting("firefox");
+		utiliyFactory.getutiliyInstance();
+		utiliyFactory.writeLogs("checking logs");
 		
-		RemoteWebDriver driver = new RemoteWebDriver( new URL("http://localhost:4444/wd/hub"),cap);
-		driver.get("http://google.com");
-		
-		Thread.sleep(2000);
-		driver.quit();
-		
-	//	java -jar selenium-server-standalone-3.4.0.jar -role node -hub http://localhost:4444/grid/register -port 5555
-		
-
 	}
 
 	public static void doTesting(String browser){
@@ -43,9 +31,10 @@ public class testClass {
 			System.out.println("for firefox browser");
 			cap = new DesiredCapabilities().firefox();
 			//System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//geckodriver.exe");			
-			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-			cap.setCapability(CapabilityType.PLATFORM, Platform.ANY);
-			cap.setCapability(CapabilityType.BROWSER_NAME, "firefox");			
+			//cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+			cap.setCapability(CapabilityType.PLATFORM, Platform.WINDOWS);
+			cap.setCapability(CapabilityType.BROWSER_NAME, "firefox");	
+			cap.setCapability(CapabilityType.VERSION, "54.0");	
 		}
 	}
 
