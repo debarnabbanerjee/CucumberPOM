@@ -12,14 +12,13 @@ Then I validate the Login with "<Type>" credentials
 Then I validate the page title as "<pageTitle>" 
 #Then I Close the browser after testing is done
 
-
 Examples:
 |Type		|   username	|password		|browser|pageTitle|
 |correct    |linda.anderson1|linda.anderson	|chrome |		  |
 |incorrect  |test		    |test	        |chrome |         |
-|correct    |admin		    |admin	        |ie |         |
-#|incorrect  |peter.mac		|peter.mac	    |chrome |         |
-#|correct    |test1		    |test1	        |chrome |         |
+|correct    |admin		    |admin	        |firefox 	|         |
+|incorrect  |peter.mac		|peter.mac	    |firefox 	|         |
+
 
 
 

@@ -1,1 +1,1 @@
-java -jar selenium-server-standalone-2.53.0.jar -role node -Dwebdriver.chrome.driver="C:\Users\Debarnab\CucumberPOM\chromedriver.exe" -nodeConfig startNode.json
+java -Dwebdriver.gecko.driver="C:\Users\Debarnab\CucumberPOM\geckodriver.exe" -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig nodeconfig.json

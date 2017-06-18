@@ -1,32 +1,32 @@
 package com.debarnab.cucumbePOM;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
-import util.BrowserFactory;
-import util.utiliyFactory;
 import cucumber.api.CucumberOptions;
 import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.junit.Cucumber;
+import utility.BrowserFactory;
+import utility.utiliyFactory;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		strict = false, format = { "pretty",
-				"json:target/cucumber.json" ,"html:target/Destination"}, tags = { "~@ignore" },
-				features = {"src\\test\\java\\com\\debarnab\\cucumbePOM"})
+				"json:target/cucumber.json" ,"html:target/Destination"}, tags = { "~@ignore" }
+				,features = {"src\\test\\java\\com\\debarnab\\cucumbePOM"}
+				//,glue={"src\\test\\java\\com\\debarnab\\cucumbePOM"}
+		
+		)
 public class runnerTest {
 
 	static String firstScenarioName="";
-
-	@BeforeClass
-	public static void setUp(){
-
-	}	
 
 	@AfterClass
 	public static void tearDown(){
@@ -38,18 +38,38 @@ public class runnerTest {
 				BrowserFactory.chrome_BKP.quit();
 				BrowserFactory.chrome_BKP=null;
 				utiliyFactory.writeLogs("Closed Chrome Browser ");
-			} if(BrowserFactory.firefox_BKP!=null){
+			} 
+			
+			if(BrowserFactory.firefox_BKP!=null){
 
 				BrowserFactory.firefox_BKP.quit();
 				BrowserFactory.firefox_BKP=null;
+				
 				utiliyFactory.writeLogs("Closed Firefox Browser ");
-			} if(BrowserFactory.ie_BKP!=null){
-
-				BrowserFactory.ie_BKP.quit();
-				BrowserFactory.ie_BKP=null;
-				utiliyFactory.writeLogs("Closed IE Browser ");
-			}	
-		} else if(utiliyFactory.getProp("executionmode").equalsIgnoreCase("grid")){
+			} 
+			
+//		//	if(BrowserFactory.ie_BKP!=null){
+//				BrowserFactory.ie_BKP.close();
+//				BrowserFactory.ie_BKP=null;
+//				utiliyFactory.writeLogs("Closed IE Browser ");
+//				
+//				try {
+//					utiliyFactory.writeLogs("Trying to kill the  IE task now");
+//					Runtime.getRuntime().exec("taskkill /C /IM iexplore.exe");
+//					utiliyFactory.writeLogs("Killed the  IE task now");
+//					
+//				} catch (IOException e) {
+//					// TODO Auto-generated catch block
+//					utiliyFactory.writeLogs("Unable to kill the IE task " +e.getMessage());
+//				}
+//		//	}	
+			
+			utiliyFactory.writeLogs("Closed all browsers for standalone running ");
+		}
+		
+		
+		// Below logic is for grid execution
+		else if(utiliyFactory.getProp("executionmode").equalsIgnoreCase("grid")){
 			utiliyFactory.writeLogs("Trying to close browser for gird running ");
 			//BrowserFactory.chrome_BKP.quit();
 			//BrowserFactory.ie_BKP.quit();

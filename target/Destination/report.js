@@ -69,7 +69,7 @@ formatter.examples({
       "value": "#Then I Close the browser after testing is done"
     }
   ],
-  "line": 16,
+  "line": 15,
   "name": "",
   "description": "",
   "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;",
@@ -82,7 +82,7 @@ formatter.examples({
         "browser",
         "pageTitle"
       ],
-      "line": 17,
+      "line": 16,
       "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;1"
     },
     {
@@ -93,7 +93,7 @@ formatter.examples({
         "chrome",
         ""
       ],
-      "line": 18,
+      "line": 17,
       "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;2"
     },
     {
@@ -104,7 +104,7 @@ formatter.examples({
         "chrome",
         ""
       ],
-      "line": 19,
+      "line": 18,
       "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;3"
     },
     {
@@ -112,21 +112,32 @@ formatter.examples({
         "correct",
         "admin",
         "admin",
-        "ie",
+        "firefox",
+        ""
+      ],
+      "line": 19,
+      "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;4"
+    },
+    {
+      "cells": [
+        "incorrect",
+        "peter.mac",
+        "peter.mac",
+        "firefox",
         ""
       ],
       "line": 20,
-      "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;4"
+      "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 87243360,
+  "duration": 39210088,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 18,
+  "line": 17,
   "name": "Testing the Orange HRM login functionality",
   "description": "",
   "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;2",
@@ -208,8 +219,8 @@ formatter.match({
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 12278336155,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c500\u003e but was:\u003c200\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:65)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 10300555786,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -256,15 +267,15 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 223836579,
+  "duration": 1557536462,
   "status": "passed"
 });
 formatter.before({
-  "duration": 70909,
+  "duration": 24258,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 18,
   "name": "Testing the Orange HRM login functionality",
   "description": "",
   "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;3",
@@ -346,8 +357,8 @@ formatter.match({
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 5228964837,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c500\u003e but was:\u003c200\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:65)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 7336053950,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"chrome\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -394,15 +405,15 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 212477253,
+  "duration": 1168097883,
   "status": "passed"
 });
 formatter.before({
-  "duration": 27524,
+  "duration": 27057,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 20,
+  "line": 19,
   "name": "Testing the Orange HRM login functionality",
   "description": "",
   "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;4",
@@ -411,7 +422,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "WH User navigates to \"Orange HRM\" site using \"ie\"",
+  "name": "WH User navigates to \"Orange HRM\" site using \"firefox\"",
   "matchedColumns": [
     3
   ],
@@ -477,15 +488,15 @@ formatter.match({
       "offset": 22
     },
     {
-      "val": "ie",
+      "val": "firefox",
       "offset": 46
     }
   ],
   "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
 });
 formatter.result({
-  "duration": 5943996421,
-  "error_message": "junit.framework.AssertionFailedError: expected:\u003c500\u003e but was:\u003c200\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:65)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"ie\"(LoginToOrangeCRM.feature:4)\r\n",
+  "duration": 10936417259,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"firefox\"(LoginToOrangeCRM.feature:4)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -532,7 +543,145 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 325279797,
+  "duration": 798142592,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 43385,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "Testing the Orange HRM login functionality",
+  "description": "",
+  "id": "as-a-orange-crm-customer-i-want-to-check-the-login-functionality-of-orange-hrm;testing-the-orange-hrm-login-functionality;;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 4,
+  "name": "WH User navigates to \"Orange HRM\" site using \"firefox\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I validate the page title as \"OrangeHRM\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 6,
+  "name": "I try to Login with the following data:",
+  "matchedColumns": [
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Field",
+        "Value"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "loginField",
+        "peter.mac"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "passwordField",
+        "peter.mac"
+      ],
+      "line": 9
+    }
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I validate the Login with \"incorrect\" credentials",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "I validate the page title as \"\"",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Orange HRM",
+      "offset": 22
+    },
+    {
+      "val": "firefox",
+      "offset": 46
+    }
+  ],
+  "location": "testSteps.wh_User_navigates_to_site_using(String,String)"
+});
+formatter.result({
+  "duration": 9799201542,
+  "error_message": "junit.framework.AssertionFailedError: expected:\u003c200\u003e but was:\u003c500\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:47)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:282)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:64)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:201)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:207)\r\n\tat com.debarnab.cucumbePOM.testSteps.wh_User_navigates_to_site_using(testSteps.java:82)\r\n\tat ✽.Given WH User navigates to \"Orange HRM\" site using \"firefox\"(LoginToOrangeCRM.feature:4)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "OrangeHRM",
+      "offset": 30
+    }
+  ],
+  "location": "testSteps.i_validate_the_page_title_as(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "testSteps.i_try_to_Login_with_the_following_data(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "incorrect",
+      "offset": 27
+    }
+  ],
+  "location": "testSteps.i_validate_the_Login_with_credentials(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 30
+    }
+  ],
+  "location": "testSteps.i_validate_the_page_title_as(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.embedding("image/png", "embedded3.png");
+formatter.after({
+  "duration": 817447677,
   "status": "passed"
 });
 });
