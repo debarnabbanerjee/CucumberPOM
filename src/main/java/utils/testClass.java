@@ -21,10 +21,5 @@ public class testClass {
         Method m = cls.getMethod(methodName);
         Object value = m.invoke(o);
         System.out.println(value.toString());
-
-
-
-
-
     }
 }

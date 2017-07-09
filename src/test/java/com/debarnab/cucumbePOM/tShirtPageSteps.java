@@ -103,23 +103,9 @@ public class tShirtPageSteps {
     @Then("^I validate the \"([^\"]*)\" elements$")
     public void i_validate_the_elements(String classForName) throws Throwable {
         try {
-//            System.out.println("Vaidating home page elemeents");
-//            if (classForName.equalsIgnoreCase("HomePage")) {
-//                homePage = new HomePage(BrowserFactory.driver);
-//                Assert.assertTrue(homePage.afterLoginPF.verifyPageElement());
-//            }
-//            else if (classForName.equalsIgnoreCase("tShirtPage")) {
-//                TShirtPage = new tShirtPage(BrowserFactory.driver);
-//                Assert.assertTrue(TShirtPage.afterLoginPF.verifyPageElement());
-//                Assert.assertTrue(TShirtPage.verifyPageElement());
-//            }else if(classForName.equalsIgnoreCase("ShoppingCartPage")){
-//                shoppingCartSummarypage = new shoppingCartSummaryPage(BrowserFactory.driver);
-//                Assert.assertTrue(shoppingCartSummarypage.verifyPageElement());
-//            }
-
             // below code is with reflection
-            utiliyFactory.instantiateClass(classForName,"verifyPageElement");
-
+            Object result = utiliyFactory.instantiateClass(classForName,"verifyPageElement");
+            Assert.assertEquals(result.toString(),"true");
         } catch (Exception e) {
             e.printStackTrace();
         }

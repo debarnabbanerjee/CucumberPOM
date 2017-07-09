@@ -42,7 +42,7 @@ public class HomePage {
         tShirt.click();
     }
 
-    public void verifyPageElement(){
-        afterLoginPF.verifyPageElement();
+    public boolean verifyPageElement(){
+       return afterLoginPF.verifyPageElement();
     }
 }

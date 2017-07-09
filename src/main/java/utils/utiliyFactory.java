@@ -8,17 +8,18 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
 
-public class utiliyFactory {	
+public class utiliyFactory {
 	//private static Logger log;
 	private static Properties prop;
 	private static FileInputStream ip;
-	private static utiliyFactory ufactory;	
+	private static utiliyFactory ufactory;
 	private static String returnpath;
 	private static HttpClient client;
 	private static HttpGet request;
@@ -27,14 +28,14 @@ public class utiliyFactory {
 	private static Class cls;
 	private static Object obj;
 
-	
+
 	public static void getutiliyInstance(){
-		if(ufactory==null){			
+		if(ufactory==null){
 			//log = Logger.getLogger("devpinoyLogger");
 			System.out.println("Testing log files and starting the testing process");
 			//log.debug("Testing log files and starting the testing process");
 			System.out.println("loaded log 4 j params");
-			
+
 			try{
 				prop = new Properties();
 				ip = new FileInputStream(System.getProperty("user.dir")+"//env.properties");
@@ -50,38 +51,38 @@ public class utiliyFactory {
 			}catch(Exception e){
 				e.printStackTrace();
 			}
-			
+
 			//createExecutionFolders();
 			ufactory = new utiliyFactory();
 			System.out.println("utility class instantantiated");
-			
+
 		}else if(ufactory!=null)
 			return;
-		
+
 	}
-	
+
 	public static void main(String[] args){
 		utiliyFactory.getutiliyInstance();
 		System.out.println(getProp("baseUrl"));
 		writeLogs("I am still testing");
 	}
-	
+
 	public static void writeLogs(String s){
 		//log.debug(s);
 	}
-	
+
 	public static String getProp(String key){
 		try{
 			writeLogs("Loaded the property " + key);
-			return prop.getProperty(key);			
+			return prop.getProperty(key);
 		}catch(Exception e){
 			writeLogs("Unable to load the property" + key);
 			return null;
 		}
 	}
-	
-	
-	
+
+
+
 	private static void createExecutionFolders(){
 		String path =new SimpleDateFormat(prop.getProperty("dateformat")).format(new Date()).toString().replaceAll(":", "-");
 		//System.out.println(path);
@@ -92,13 +93,13 @@ public class utiliyFactory {
 		}catch(Exception e){
 			//log.debug("Unable to create results folder" + e.getMessage());
 		}
-		
+
 	}
-	
+
 	public static int checkResponse(String url){
 		try{
 			client = HttpClientBuilder.create().build();
-			request = new HttpGet(url);		
+			request = new HttpGet(url);
 			response = client.execute(request);
 			writeLogs("Response Code : "+ response.getStatusLine().getStatusCode());
 			return response.getStatusLine().getStatusCode();
@@ -112,15 +113,20 @@ public class utiliyFactory {
 		return returnpath;
 	}
 
-	public static void instantiateClass(String className,String methodName){
+	public static Object instantiateClass(String className,String methodName){
 		try{
 			System.out.println("Class name is " + className + " and  method name is " + methodName);
 			cls = Class.forName("com.debarnab.cucumbePOM.WebPages."+className);
-			obj = cls.newInstance();
-			Method m = cls.getMethod(methodName,WebDriver.class);
-			m.invoke(obj);
+            //Class<?> cls = Class.forName("utils.myString");
+            Constructor<?> cons = cls.getConstructor(WebDriver.class);
+            //The call to getConstructor specifies that you want the constructor that takes a single String parameter. Now to create an instance:
+            Object o = cons.newInstance(BrowserFactory.driver);
+            Method m = cls.getMethod(methodName);
+            Object value = m.invoke(o);
+            return value;
 		}catch (Exception e){
 			e.printStackTrace();
+			return null;
 		}
 
 
