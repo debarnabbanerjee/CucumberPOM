@@ -111,16 +111,9 @@ public class tShirtPageSteps {
         }
     }
 
-    @Then("^I click on \"([^\"]*)\" on HomePage$")
-    public void i_click_on(String category) throws Throwable {
-        HomePage homePage = new HomePage(BrowserFactory.driver);
-        if (category.equalsIgnoreCase("TShirts")) {
-            homePage.clickTShirt();
-        } else if (category.equalsIgnoreCase("TShirts")) {
-            homePage.clickdresses();
-        } else if (category.equalsIgnoreCase("WOMEN")) {
-            homePage.clickWoman();
-        }
+    @Then("^I click on \"([^\"]*)\" on \"([^\"]*)\"$")
+    public void i_click_on(String category,String page) throws Throwable {
+        utiliyFactory.instantiateClass(page,"click"+category);
     }
 
     @When("^I try to add an \"([^\"]*)\" with the following features:$")

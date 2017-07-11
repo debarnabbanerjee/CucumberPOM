@@ -11,9 +11,9 @@ Feature: Feature File to test the order of Tshirts
       | Password | <password> |
     Then I see the title as "My account - My Store"
     Then I validate the "HomePage" elements
-#    And I click on "<category>" on HomePage
-#    Then I see the title as "T-shirts - My Store"
-#    Then I validate the "tShirtPage" elements
+    And I click on "<category>" on "HomePage"
+    Then I see the title as "T-shirts - My Store"
+    Then I validate the "tShirtPage" elements
 #    When I try to add an "tShirt" with the following features:
 #      | Field | Value   |
 #      | size  | <size>  |
@@ -43,5 +43,5 @@ Feature: Feature File to test the order of Tshirts
 
     Examples:
       | browser | username                    | password     | category | size  | Color | Compositions | Styles | Properties   | unitPrice | shippingChaarges | quantity | total  | Tax   | grandTotal |
-      | Chrome  | debarnab.banerjee@gmail.com | California0! | TShirts  | small | blue  | Cotton       | Casual | Short Sleeve | $16.51    | $2               | 1        | $18.51 | $0.00 | $18.51     |
-      #| IE      | debarnab.banerjee@gmail.com | California0! | TShirts  | M(1)  | Blue  | Casual       | Casual | Short Sleeve | $16.51    | $2               | 1        | $18.51 | $0.00 | $18.51     |
+      | Chrome  | debarnab.banerjee@gmail.com | California0! | TShirt  | small | blue  | Cotton       | Casual | Short Sleeve | $16.51    | $2               | 1        | $18.51 | $0.00 | $18.51     |
+      | Firefox      | debarnab.banerjee@gmail.com | California0! | TShirts  | M(1)  | Blue  | Casual       | Casual | Short Sleeve | $16.51    | $2               | 1        | $18.51 | $0.00 | $18.51     |
