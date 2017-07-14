@@ -97,7 +97,7 @@ public class tShirtPage extends basePage {
         }catch(Exception e){e.printStackTrace(); return false; }
     }
 
-    public boolean addTshirtToCart(String size,String color){
+    public boolean addToCart(String size,String color){
         try{
             // medium
             if(size.equalsIgnoreCase("small"))

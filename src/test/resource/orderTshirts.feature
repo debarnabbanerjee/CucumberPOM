@@ -14,14 +14,14 @@ Feature: Feature File to test the order of Tshirts
     And I click on "<category>" on "HomePage"
     Then I see the title as "T-shirts - My Store"
     Then I validate the "tShirtPage" elements
-#    When I try to add an "tShirt" with the following features:
-#      | Field | Value   |
-#      | size  | <size>  |
-#      | Color | <Color> |
-##     # | Compositions | <Compositions> |
-##      #| Styles       | <Styles>       |
-##     # | Properties   | <Properties>   |
-##
+    When I try to add an item in "tShirtPage" with the following features:
+      | Field | Value   |
+      | size  | <size>  |
+      | Color | <Color> |
+     # | Compositions | <Compositions> |
+     # | Styles       | <Styles>       |
+     # | Properties   | <Properties>   |
+
 #    Then I verify that the added "<category>" in cart
 #    And I verify "<category>" the confirmation message as "Product successfully added to your shopping cart"
 #    And I click "<category>" checkOut btn

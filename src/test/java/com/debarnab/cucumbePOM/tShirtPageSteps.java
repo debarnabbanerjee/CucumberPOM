@@ -116,14 +116,19 @@ public class tShirtPageSteps {
         utiliyFactory.instantiateClass(page,"click"+category);
     }
 
-    @When("^I try to add an \"([^\"]*)\" with the following features:$")
+    @When("^I try to add an item in \"([^\"]*)\" with the following features:$")
     public void i_try_to_buy_a_with_the_following_features(String category , DataTable table) throws Throwable {
         // for tshirt page
         if(category.equalsIgnoreCase("tShirt")){
             final List<List<String>> raw = table.raw();
            // System.out.println("Size is " + raw.get(1).get(1));
            // System.out.println("Color is " + raw.get(2).get(1));
-            Assert.assertTrue(TShirtPage.addTshirtToCart(raw.get(1).get(1),raw.get(2).get(1)));
+          //  Assert.assertTrue(TShirtPage.addTshirtToCart(raw.get(1).get(1),raw.get(2).get(1)));
+
+        // Below code is using reflection
+           Object result =  utiliyFactory.instantiateClass(category,"addToCart");
+            Assert.assertEquals(result.toString(),"true");
+
         }
     }
 

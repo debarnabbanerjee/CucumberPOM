@@ -128,7 +128,22 @@ public class utiliyFactory {
 			e.printStackTrace();
 			return null;
 		}
+	}
 
-
+	public static Object instantiateClass(String className,String methodName,Object dataToBePassed){
+		try{
+			System.out.println("Class name is " + className + " and  method name is " + methodName);
+			cls = Class.forName("com.debarnab.cucumbePOM.WebPages."+className);
+			//Class<?> cls = Class.forName("utils.myString");
+			Constructor<?> cons = cls.getConstructor(WebDriver.class);
+			//The call to getConstructor specifies that you want the constructor that takes a single String parameter. Now to create an instance:
+			Object o = cons.newInstance(BrowserFactory.driver);
+			Method m = cls.getMethod(methodName);
+			Object value = m.invoke(o);
+			return value;
+		}catch (Exception e){
+			e.printStackTrace();
+			return null;
+		}
 	}
 }
